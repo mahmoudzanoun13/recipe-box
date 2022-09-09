@@ -80,7 +80,7 @@ export function App() {
   };
 
   const filteredRecipes = recipes.filter((recipe) => {
-    return recipe.ingredients.includes(searchField);
+    return recipe.title.toLowerCase().includes(searchField.toLowerCase());
   });
 
   const submitHandler = (e) => {
