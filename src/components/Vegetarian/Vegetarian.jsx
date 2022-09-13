@@ -4,11 +4,19 @@ import { Link } from "react-router-dom";
 
 export const Vegetarian = ({ recipes, showEditModal, deleteRecipe }) => {
   return (
-    <div className="my-16">
-      <h3>Our Vegetarian picks</h3>
+    <div className="mb-16 mt-20">
+      <h3 className="text-center sm:text-left">Our Vegetarian picks</h3>
       <Splide
         options={{
           perPage: 3,
+          breakpoints: {
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
           arrows: false,
           pagination: false,
           drag: "free",

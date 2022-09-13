@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 
 export const Search = ({ searchField, onSearchChange, submitHandler }) => {
   return (
-    <form onSubmit={submitHandler} className="mx-80">
+    <form onSubmit={submitHandler} className="mx-0 md:mx-80">
       <div className="w-full relative">
         <FaSearch className="absolute top-1/2 left-0 transform translate-x-full -translate-y-1/2 text-white" />
         <input

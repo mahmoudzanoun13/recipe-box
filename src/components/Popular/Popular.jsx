@@ -5,10 +5,18 @@ import { Link } from "react-router-dom";
 export const Popular = ({ recipes, showEditModal, deleteRecipe }) => {
   return (
     <div className="my-16">
-      <h3>Popular picks</h3>
+      <h3 className="text-center sm:text-left">Popular picks</h3>
       <Splide
         options={{
           perPage: 4,
+          breakpoints: {
+            768: {
+              perPage: 2,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
           arrows: false,
           pagination: false,
           drag: "free",

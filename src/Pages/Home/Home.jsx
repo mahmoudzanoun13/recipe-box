@@ -13,7 +13,7 @@ export const Home = ({ recipes, onAddModal, showEditModal, deleteRecipe }) => {
     >
       <FaPlusCircle
         onClick={() => onAddModal()}
-        className="text-blue-500 hover:text-blue-400 text-6xl absolute top-[50%] right-[10%] cursor-pointer transform scale-100 hover:scale-110 duration-500 ease-in-out"
+        className="text-blue-500 hover:text-blue-400 text-6xl cursor-pointer transform scale-100 hover:scale-110 duration-500 ease-in-out"
       />
       <Vegetarian
         recipes={recipes}
